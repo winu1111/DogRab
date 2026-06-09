@@ -10,6 +10,8 @@ export function applyRGB(
     settings
 ){
 
+    console.log("rgb");
+
     for(
         let i=0;
         i<settings.count;
