@@ -129,48 +129,29 @@ function onGenerate(){
 
     console.log(rgbSettings);
 
-    applyRGB(
-        ctx,
-        canvas,
-        rgbSettings
-    );
-    
-    applyWave(
-        ctx,
-        canvas,
-        waveSettings
-    );
-    
-    applySlice(
-        ctx,
-        canvas,
-        sliceSettings
-    );
-    
-    applyBlock(
-        ctx,
-        canvas,
-        blockSettings
-    );
-    
-    applyRGB(
-        ctx,
-        canvas,
-        rgbSettings
-    );
-    
-    applyNoise(
-        ctx,
-        canvas,
-        noiseSettings
-    );
-    
-    applyInvert(
-        ctx,
-        canvas,
-        invertSettings
-    );
-}
+applySlice(
+    ctx,
+    canvas,
+    sliceSettings
+);
+
+applyBlock(
+    ctx,
+    canvas,
+    blockSettings
+);
+
+applyRGB(
+    ctx,
+    canvas,
+    rgbSettings
+);
+
+applyNoise(
+    ctx,
+    canvas,
+    noiseSettings
+);
 
 function onSavePNG(){
 
