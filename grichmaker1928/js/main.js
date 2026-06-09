@@ -119,12 +119,12 @@ function onGenerate(){
         count: Number(document.getElementById("blockCount").value),
         minSize: Number(document.getElementById("blockMinSize").value),
         maxSize: Number(document.getElementById("blockMaxSize").value),
-        Strength: Number(document.getElementById("blockStrength").value),
+        strength: Number(document.getElementById("blockStrength").value),
     };
 
     const noiseSettings = {
         count: Number(document.getElementById("noiseCount").value),
-        Strength: Number(document.getElementById("noiseStrength").value)
+        strength: Number(document.getElementById("noiseStrength").value)
     };
 
     console.log(rgbSettings);
