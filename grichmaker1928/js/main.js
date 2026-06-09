@@ -107,6 +107,8 @@ function onGenerate(){
         )
     };
 
+    console.log(rgbSettings);
+
     applyRGB(
         ctx,
         canvas,
