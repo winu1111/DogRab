@@ -163,6 +163,8 @@ applyNoise(
     noiseSettings
 );
 
+}
+
 function onSavePNG(){
 
     const a =
