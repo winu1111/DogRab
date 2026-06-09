@@ -1,27 +1,192 @@
-<header>
-  タイトル
-</header>
+<!DOCTYPE html>
+<html lang="ja">
 
-<section>
-  画像アップロード
-</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Art Generator</title>
 
-<section>
-  シード
-</section>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<section>
-  エフェクト設定
-</section>
+<body>
 
-<section>
-  ボタン群
-</section>
+<div class="container">
 
-<section>
-  Canvas
-</section>
+    <header>
+        <h1>Glitch Art Generator</h1>
+        <p>画像のランダムな部分にグリッチを発生させます</p>
+    </header>
 
-<section>
-  保存
-</section>
+    <section class="panel">
+
+        <h2>画像</h2>
+
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*">
+
+    </section>
+
+    <section class="panel">
+
+        <h2>シード</h2>
+
+        <input
+            type="number"
+            id="seed"
+            value="12345">
+
+    </section>
+
+    <section class="panel">
+
+        <h2>RGB分離</h2>
+
+        <div class="setting">
+
+            <label>回数</label>
+            <input type="range" min="0" max="100" value="20">
+
+        </div>
+
+        <div class="setting">
+
+            <label>サイズ最小</label>
+            <input type="range" min="10" max="300" value="50">
+
+        </div>
+
+        <div class="setting">
+
+            <label>サイズ最大</label>
+            <input type="range" min="50" max="500" value="150">
+
+        </div>
+
+        <div class="setting">
+
+            <label>強度最小</label>
+            <input type="range" min="1" max="50" value="5">
+
+        </div>
+
+        <div class="setting">
+
+            <label>強度最大</label>
+            <input type="range" min="1" max="100" value="20">
+
+        </div>
+
+    </section>
+
+    <section class="panel">
+
+        <h2>横ズレ</h2>
+
+        <div class="setting">
+            <label>回数</label>
+            <input type="range" min="0" max="100" value="20">
+        </div>
+
+        <div class="setting">
+            <label>サイズ最小</label>
+            <input type="range" min="10" max="300" value="50">
+        </div>
+
+        <div class="setting">
+            <label>サイズ最大</label>
+            <input type="range" min="50" max="500" value="150">
+        </div>
+
+        <div class="setting">
+            <label>強度最小</label>
+            <input type="range" min="1" max="100" value="10">
+        </div>
+
+        <div class="setting">
+            <label>強度最大</label>
+            <input type="range" min="1" max="300" value="50">
+        </div>
+
+    </section>
+
+    <section class="panel">
+
+        <h2>ブロック破壊</h2>
+
+        <div class="setting">
+            <label>回数</label>
+            <input type="range" min="0" max="100" value="15">
+        </div>
+
+        <div class="setting">
+            <label>サイズ最小</label>
+            <input type="range" min="10" max="300" value="40">
+        </div>
+
+        <div class="setting">
+            <label>サイズ最大</label>
+            <input type="range" min="50" max="500" value="180">
+        </div>
+
+        <div class="setting">
+            <label>強度</label>
+            <input type="range" min="1" max="200" value="50">
+        </div>
+
+    </section>
+
+    <section class="panel">
+
+        <h2>ノイズ</h2>
+
+        <div class="setting">
+            <label>回数</label>
+            <input type="range" min="0" max="100" value="30">
+        </div>
+
+        <div class="setting">
+            <label>密度</label>
+            <input type="range" min="1" max="100" value="20">
+        </div>
+
+    </section>
+
+    <section class="buttons">
+
+        <button id="generateBtn">
+            生成
+        </button>
+
+        <button id="resetBtn">
+            リセット
+        </button>
+
+    </section>
+
+    <section class="panel">
+
+        <h2>プレビュー</h2>
+
+        <canvas id="canvas"></canvas>
+
+    </section>
+
+    <section class="buttons">
+
+        <button id="savePNG">
+            PNG保存
+        </button>
+
+        <button id="saveJPEG">
+            JPEG保存
+        </button>
+
+    </section>
+
+</div>
+
+</body>
+</html>
