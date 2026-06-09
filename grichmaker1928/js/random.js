@@ -1,3 +1,5 @@
+console.log("random loaded");
+
 let rng = Math.random;
 
 export function setSeed(seed){
@@ -21,3 +23,9 @@ export function randInt(min,max){
         rand(min,max)
     );
 }
+
+console.log({
+    setSeed,
+    rand,
+    randInt
+});
