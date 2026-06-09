@@ -107,6 +107,29 @@ function onGenerate(){
         )
     };
 
+    const sliceSettings = {
+        count: Number(document.getElementById("sliceCount").value),
+        minSize: Number(document.getElementById("sliceMinSize").value),
+        maxSize: Number(document.getElementById("sliceMaxSize").value),
+        minStrength: Number(document.getElementById("sliceMinStrength").value),
+        maxStrength: Number(document.getElementById("sliceMaxStrength").value)
+    };
+
+    const sliceSettings = {
+        count: Number(document.getElementById("sliceCount").value),
+        minSize: Number(document.getElementById("sliceMinSize").value),
+        maxSize: Number(document.getElementById("sliceMaxSize").value),
+        Strength: Number(document.getElementById("sliceMinStrength").value),
+    };
+
+    const sliceSettings = {
+        count: Number(document.getElementById("sliceCount").value),
+        minSize: Number(document.getElementById("sliceMinSize").value),
+        maxSize: Number(document.getElementById("sliceMaxSize").value),
+        minStrength: Number(document.getElementById("sliceMinStrength").value),
+        maxStrength: Number(document.getElementById("sliceMaxStrength").value)
+    };
+
     console.log(rgbSettings);
 
     applyRGB(
