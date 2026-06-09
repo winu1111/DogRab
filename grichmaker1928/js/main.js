@@ -115,19 +115,16 @@ function onGenerate(){
         maxStrength: Number(document.getElementById("sliceMaxStrength").value)
     };
 
-    const sliceSettings = {
-        count: Number(document.getElementById("sliceCount").value),
-        minSize: Number(document.getElementById("sliceMinSize").value),
-        maxSize: Number(document.getElementById("sliceMaxSize").value),
-        Strength: Number(document.getElementById("sliceMinStrength").value),
+    const blockSettings = {
+        count: Number(document.getElementById("blockCount").value),
+        minSize: Number(document.getElementById("blockMinSize").value),
+        maxSize: Number(document.getElementById("blockMaxSize").value),
+        Strength: Number(document.getElementById("blockStrength").value),
     };
 
-    const sliceSettings = {
-        count: Number(document.getElementById("sliceCount").value),
-        minSize: Number(document.getElementById("sliceMinSize").value),
-        maxSize: Number(document.getElementById("sliceMaxSize").value),
-        minStrength: Number(document.getElementById("sliceMinStrength").value),
-        maxStrength: Number(document.getElementById("sliceMaxStrength").value)
+    const noiseSettings = {
+        count: Number(document.getElementById("noiseCount").value),
+        Strength: Number(document.getElementById("noiseStrength").value)
     };
 
     console.log(rgbSettings);
