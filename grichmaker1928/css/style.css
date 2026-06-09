@@ -1,1 +1,171 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
+body{
+
+    background:#111;
+
+    color:#fff;
+
+    font-family:
+    "Segoe UI",
+    sans-serif;
+
+    padding:20px;
+}
+
+.container{
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+header h1{
+
+    margin-bottom:10px;
+
+    font-size:2rem;
+}
+
+.panel{
+
+    background:#1b1b1b;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 0 10px rgba(0,0,0,.4);
+}
+
+.panel h2{
+
+    margin-bottom:15px;
+
+    color:#55ddff;
+}
+
+.setting{
+
+    margin-bottom:15px;
+}
+
+.setting label{
+
+    display:block;
+
+    margin-bottom:5px;
+}
+
+input[type="range"]{
+
+    width:100%;
+}
+
+input[type="number"]{
+
+    width:100%;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#333;
+
+    color:white;
+}
+
+input[type="file"]{
+
+    width:100%;
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+}
+
+button{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    transition:.2s;
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+}
+
+#generateBtn{
+
+    background:#00c853;
+
+    color:white;
+}
+
+#resetBtn{
+
+    background:#ff6d00;
+
+    color:white;
+}
+
+#savePNG{
+
+    background:#2979ff;
+
+    color:white;
+}
+
+#saveJPEG{
+
+    background:#9c27b0;
+
+    color:white;
+}
+
+canvas{
+
+    width:100%;
+
+    max-width:100%;
+
+    background:black;
+
+    border-radius:10px;
+
+    display:block;
+}
