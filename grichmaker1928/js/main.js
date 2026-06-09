@@ -1,3 +1,5 @@
+console.log("main loaded");
+
 import { setupUI } from "./ui.js";
 import { setSeed, rand } from "./random.js";
 
