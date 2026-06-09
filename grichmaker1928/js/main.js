@@ -113,7 +113,9 @@ function onGenerate(){
         ctx,
         canvas,
         rgbSettings
-    );applyWave(
+    );
+    
+    applyWave(
         ctx,
         canvas,
         waveSettings
