@@ -1,6 +1,12 @@
 import { setupUI } from "./ui.js";
 import { setSeed, rand } from "./random.js";
+
 import { applyRGB } from "./effects/rgb.js";
+import { applySlice } from "./effects/slice.js";
+import { applyBlock } from "./effects/block.js";
+import { applyNoise } from "./effects/noise.js";
+import { applyInvert } from "./effects/invert.js";
+import { applyWave } from "./effects/wave.js";
 
 let canvas;
 let ctx;
@@ -99,6 +105,40 @@ function onGenerate(){
         ctx,
         canvas,
         rgbSettings
+    );applyWave(
+        ctx,
+        canvas,
+        waveSettings
+    );
+    
+    applySlice(
+        ctx,
+        canvas,
+        sliceSettings
+    );
+    
+    applyBlock(
+        ctx,
+        canvas,
+        blockSettings
+    );
+    
+    applyRGB(
+        ctx,
+        canvas,
+        rgbSettings
+    );
+    
+    applyNoise(
+        ctx,
+        canvas,
+        noiseSettings
+    );
+    
+    applyInvert(
+        ctx,
+        canvas,
+        invertSettings
     );
 }
 
