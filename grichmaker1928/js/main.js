@@ -123,10 +123,20 @@ function onGenerate(){
     };
 
     const noiseSettings = {
-        count: Number(document.getElementById("noiseCount").value),
-        strength: Number(document.getElementById("noiseStrength").value)
-    };
 
+    count:
+    Number(
+        document.getElementById("noiseCount").value
+    ),
+
+    density:
+    Number(
+        document.getElementById("noiseStrength").value
+    ) / 100,
+
+    minSize: 20,
+    maxSize: 120
+};
     console.log(rgbSettings);
 
 applySlice(
