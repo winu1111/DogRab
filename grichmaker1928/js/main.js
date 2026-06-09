@@ -32,6 +32,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function onImageLoad(img){
 
+    console.log("loaded");
+
     originalImage = img;
 
     canvas.width = img.width;
