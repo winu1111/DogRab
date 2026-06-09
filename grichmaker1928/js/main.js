@@ -62,6 +62,8 @@ function onReset(){
 
 function onGenerate(){
 
+    console.log("generate");
+
     if(!originalImage) return;
 
     onReset();
